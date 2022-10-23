@@ -1,18 +1,38 @@
+
+import React from "react";
 import { Box } from "@chakra-ui/react";
+import Logo from "./Logo";
 import NavBar from "./NavBar";
-import ThemeButton from "./themeButton";
+import { ThemeButton } from "./ThemeButton";
+
+
+
 const Header = () => {
   return (
     <Box
-      as="div"
+      as='div'
       display={"flex"}
-      width="100%"
+      minWidth="100%"
       flexDirection={"row"}
       justifyContent={"space-between"}
+      padding='0px 20px'
       alignItems={"center"}
     >
+      <Box
+      display={'flex'}
+      alignItems='center'
+      >
+      <Logo/>
       <ThemeButton />
-      <NavBar />
+      </Box>
+      <NavBar containerStyle={ 
+      {display:"flex",
+      width:"30%",
+      justifyContent:"space-between",
+      m:"0",
+      paddingRight:'0px'}
+}
+        />
     </Box>
   );
 };

@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Container, Text } from "@chakra-ui/react";
 import WelcomeBlock from "./WelcomeBlock";
 
@@ -8,7 +9,7 @@ const HomeScreen = () => {
       display={"flex"}
       flexDir="row"
       minW={"100%"}
-      height={"max-content"}
+      height={'100%'}
       as="div"
     >
       <WelcomeBlock />
