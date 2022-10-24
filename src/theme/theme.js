@@ -5,6 +5,16 @@ import { ContainerStyle as Container } from "../styledComponents/ContanerStyle";
 import { LinkStyle as Link } from "../styledComponents/LinkStyle";
 import {HeadingStyle as Heading} from '../styledComponents/HeadingStyle';
 import {TextStyle as Text} from '../styledComponents/TextStyle';
+import { BoxStyle as Box } from "../styledComponents/BoxStyle";
+
+const breakpoints = {
+  sm: '320px',
+  md: '768px',
+  lg: '960px',
+  xl: '1200px',
+  '2xl': '1536px',
+}
+
 const theme = extendTheme({
   colors,
   components: { 
@@ -12,8 +22,12 @@ const theme = extendTheme({
     Container, 
     Link, 
     Heading,
-    Text
+    Text,
+    Box
   },
+  breakpoints,
+  fons: { heading: `'Open Sans', sans-serif`,
+    body: `'Raleway', sans-serif`,}
 });
 
 export default theme;

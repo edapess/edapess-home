@@ -1,14 +1,10 @@
 import React from "react";
-import { Container, Link } from "@chakra-ui/react";
+import { Box, Container, Link } from "@chakra-ui/react";
 
 const NavBar = ({containerStyle}) => {
   return (
-    <Container
-      display={containerStyle.display}
-      justifyContent={containerStyle.justifyContent}
-      m={containerStyle.m}
-      paddingRight={containerStyle.paddingRight}
-      width={containerStyle.width}
+    <Box
+      style={containerStyle}
          >
       <Link variant="nav-link" href="/About">
         About
@@ -22,7 +18,7 @@ const NavBar = ({containerStyle}) => {
       <Link variant="nav-link" href="/Contacts">
         Contacts
       </Link>
-    </Container>
+    </Box>
   );
 };
 

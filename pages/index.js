@@ -1,5 +1,5 @@
 import { Box, Container, Text } from "@chakra-ui/react";
-import HomeScreen from "../src/components/HomeScreen";
+import HomeScreen from "../src/components/HomeScreen/HomeScreen";
 
 const Home = () => {
   return (

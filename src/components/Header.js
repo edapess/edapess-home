@@ -6,7 +6,6 @@ import NavBar from "./NavBar";
 import { ThemeButton } from "./ThemeButton";
 
 
-
 const Header = () => {
   return (
     <Box
@@ -21,16 +20,20 @@ const Header = () => {
       <Box
       display={'flex'}
       alignItems='center'
+      justifyContent={'space-between'}
+      columnGap='20px'
       >
       <Logo/>
       <ThemeButton />
       </Box>
       <NavBar containerStyle={ 
-      {display:"flex",
+      {
+      display:"flex",
       width:"30%",
       justifyContent:"space-between",
       m:"0",
-      paddingRight:'0px'}
+      padding:'0px 0px 0px 0px'
+    }
 }
         />
     </Box>

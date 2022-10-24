@@ -9,6 +9,8 @@ const colors = {
   textLight: "#cfc9c2",
   buttonsDark: "#2ac3de",
   buttonsLight: "#73daca",
+  backgroundOnDark: '#565f89',
+  backgroundOnLight: '#a9b1d6'
 };
 
 export default colors;
