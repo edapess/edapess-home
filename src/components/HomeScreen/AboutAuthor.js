@@ -3,9 +3,7 @@ import { Heading, Box, Text, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
 import profPic from '../../assets/edapeBack.png'
 import dictionary from '../../data/dictionary.json'
-const AboutAuthor = () => {
-    const {colorMode} =useColorMode()
-    console.log(colorMode);
+const AboutAuthor = ({colorMode}) => {
     return(
         <Box 
         as='div' 
@@ -15,7 +13,7 @@ const AboutAuthor = () => {
         alignItems='center'
         flexDir={'column'} 
         rowGap={'20px'}
-        padding='60px'
+        paddingBottom='10'
 > 
         <Box
         borderWidth='3px'
@@ -34,7 +32,9 @@ const AboutAuthor = () => {
           </Box>
         <Heading
           as='h1'  
-          variant='h1-heading'>
+          variant='h1-heading'
+          textAlign={'center'}
+      >
           {dictionary.homepage.author}
         </Heading>
           <Text variant={'paragraph'}>{dictionary.homepage.currentPosition}</Text>

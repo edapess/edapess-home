@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Container, Text } from "@chakra-ui/react";
+import { Box, Container, Text, useColorMode } from "@chakra-ui/react";
 import WelcomeBlock from "./WelcomeBlock";
 
 const HomeScreen = () => {
+     const {colorMode} = useColorMode() 
   return (
     <Box
       variant="outline"
@@ -12,7 +13,7 @@ const HomeScreen = () => {
       height={'100%'}
       as="div"
     >
-      <WelcomeBlock />
+      <WelcomeBlock colorMode={colorMode}/>
     </Box>
   );
 };

@@ -10,7 +10,6 @@ const Home = () => {
       flexDir="column"
       variant={"outline"}
       margin="0"
-      height={"100vh"}
       minW="100%"
       as="div"
     >

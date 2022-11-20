@@ -1,4 +1,4 @@
-import { Box, Container, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Container, Text, useColorMode, Link } from "@chakra-ui/react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 
@@ -16,6 +16,13 @@ const Footer = () => {
       bg={colorMode === 'dark' ? 'backgroundOnDark' :'backgroundOnLight'}
     >
       <Logo/>
+      <Box>
+        <Link 
+          href='mailto:edmondavetisyanw@gmail.com' 
+          variant="nav-link">
+          edmondavetisyanw@gmail.com
+        </Link>
+      </Box>
       <NavBar
       containerStyle={ 
       {
