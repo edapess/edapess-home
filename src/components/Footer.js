@@ -11,7 +11,7 @@ const Footer = () => {
       minWidth="100%"
       flexDirection={"row"}
       justifyContent={"space-between"}
-      padding='0px 20px'
+      padding='10px 30px'
       alignItems={"center"}
       bg={colorMode === 'dark' ? 'backgroundOnDark' :'backgroundOnLight'}
     >
@@ -23,17 +23,6 @@ const Footer = () => {
           edmondavetisyanw@gmail.com
         </Link>
       </Box>
-      <NavBar
-      containerStyle={ 
-      {
-      display:"flex",
-      justifyContent:"space-between",
-      m:"0px",
-      padding:'10px 0px 20px 0px',
-      flexDirection: 'column'
-    }
-      }
-        />
     </Box>
   );
 };

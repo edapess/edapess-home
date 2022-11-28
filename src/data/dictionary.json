@@ -1,7 +1,21 @@
 {
-    "homepage":{
-        "author":"Edmond Avetisyan",
-        "about" : "Hi, I'm Ed, front end developer from sunny Armenia. Currently I'm working as a React-Native developer",
-        "currentPosition" : "React Native developer"
+  "homepage": {
+    "author": "Edmond Avetisyan",
+    "about": "Hi, I'm Ed, front end developer from sunny Armenia. Currently I'm working as a React-Native developer",
+    "currentPosition": "React Native developer"
+  },
+
+  "aboutScreen": {
+    "university": {
+      "universityTitle": "Armenian National Agrarian University",
+      "universityDescription": "Finance Management",
+      "universityYears": "2013 - 2020"
+    },
+    "programming": {
+      "programmingTitle": "TODO"
+    },
+    "hobby": {
+      "hobbyTitle": "hobby desc."
     }
+  }
 }
