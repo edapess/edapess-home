@@ -12,10 +12,22 @@
       "universityYears": "2013 - 2020"
     },
     "programming": {
-      "programmingTitle": "TODO"
-    },
-    "hobby": {
-      "hobbyTitle": "hobby desc."
+      "programmingTitle": "Coding journey",
+      "programmingDescription": [
+        {
+          "position": "Frontend Web Developer(crawler)",
+          "company": "Crawbots",
+          "years": "Aug 2020 - Feb 2021",
+          "about": "startup for data collecting via Puppeter"
+        },
+
+        {
+          "position": "Mobile Developer",
+          "company": "Arora",
+          "years": "Apr 2022 - Present",
+          "about": "Building mobile apps in food tech using React Native, Flutter, KMM"
+        }
+      ]
     }
   }
 }

@@ -1,5 +1,6 @@
-import { Box, Heading, Text, useColorMode } from "@chakra-ui/react";
+import { Box, chakra, Heading, Text, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
+import { motion, isValidMotionProp } from "framer-motion";
 
 const AboutBlocks = ({ title, description, imageSource, years }) => {
   const { colorMode } = useColorMode();
@@ -7,7 +8,7 @@ const AboutBlocks = ({ title, description, imageSource, years }) => {
   return (
     <Box
       backgroundColor={colorMode === "dark" ? "orangeLight" : "backgroundDark"}
-      as="div"
+      as={motion.div}
       width={300}
       height={300}
       display="flex"
@@ -16,6 +17,9 @@ const AboutBlocks = ({ title, description, imageSource, years }) => {
       alignItems={"center"}
       borderRadius="20"
       padding={10}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition="opacity 6000ms easy-in-out"
     >
       <Box>
         <Heading textAlign={"center"} as="h3" variant={"h3-heading"}>
