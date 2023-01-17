@@ -9,7 +9,7 @@ const AboutBlocks = ({ title, description, imageSource, years }) => {
     <Box
       backgroundColor={colorMode === "dark" ? "orangeLight" : "backgroundDark"}
       as={motion.div}
-      width={300}
+      width={"60%"}
       height={300}
       display="flex"
       flexDirection={"column"}
@@ -20,6 +20,7 @@ const AboutBlocks = ({ title, description, imageSource, years }) => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition="opacity 6000ms easy-in-out"
+      margin={0}
     >
       <Box>
         <Heading textAlign={"center"} as="h3" variant={"h3-heading"}>
